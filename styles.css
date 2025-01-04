@@ -1,0 +1,162 @@
+/*------------------index.html--------------------*/
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    font-family: sans-serif;
+}
+
+.register-container {
+    margin: auto;
+    background-color: lightgray;
+    max-width: 300px;
+    margin-top: 20px;
+    border-radius: 10px;
+    padding: 20px ;   
+}
+
+.register-form input {
+    margin-bottom: 10px;
+    width: 100%;
+    height: 25px;
+    border-radius: 5px;
+    border: 1px solid rgba(77, 73, 73,0.6);
+    padding: 5px;
+}
+
+#register-btn { 
+    display: block; 
+    width: 100%;
+    height: 36px;
+    text-align: center;
+    padding: 10px;
+    background-color: rgb(54, 51, 51);
+    color: white;
+    border-radius: 5px;
+    user-select: none; /*prevent user from selecting text inside the block*/
+    cursor: pointer;
+}
+
+#register-btn:hover {
+    background-color: rgb(22, 20, 20);
+}
+
+.highlight {
+    background-color: lightgrey;
+}
+
+/*--------------------------------------------------------------------*/
+
+
+/*-------------------itemList.html-------------------------*/
+.headingContainer {
+    padding: 0.8rem;
+    background-color: rgb(56, 134, 86);
+    color: white;
+    margin-bottom: 1.2rem;
+    padding-left: 1.5rem;
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.headingContainer input{
+    margin-left: auto; /*placing the input at the right of the flex box*/
+    border-radius: 5px;
+    border: 3px solid rgb(95, 95, 95);
+    height: 5vh;
+    padding: 0.2rem;
+    font-size: 1rem;
+    width: 40%;
+    outline: none;
+}
+
+.list-container {
+    display: block;
+    max-width: 31.25rem;
+    padding: 0.8rem;
+    margin: 2rem;
+    background-color: rgb(243, 240, 237);
+    border-radius: 0.8rem;   
+}
+
+#form-list input {
+    width: 60%;
+    height: 4vh;
+    border-radius: 5px;
+    border: 1px solid rgb(165, 162, 162);
+    margin-top: 0.6rem;
+    margin-bottom: 0.1rem;
+    outline: none;
+    padding: 0.2rem;
+    font-size: 1rem;
+}
+
+#form-list label {
+    display: inline-block;
+    border: 1px solid rgb(165, 162, 162);
+    padding: 0.3rem;
+    background-color: rgb(95, 91, 91);
+    color: white;
+    border-radius: 5px;
+    cursor: pointer;
+    user-select: none;
+}
+
+#form-list label:hover {
+    background-color: rgb(41, 40, 40);
+}
+
+#itemsHead {
+    margin-top: 1.2rem;
+}
+
+#itemCount {
+    height: 4vh;
+    border: 1px solid rgb(165, 162, 162);
+    color: rgb(95, 91, 91);
+    outline-color: rgb(95, 91, 91);
+}
+
+
+
+#items li {
+    list-style-type: none;
+    border: 1px solid rgb(182, 182, 184);
+    margin-bottom: 0.1rem;
+    padding: 0.5rem;
+    height: 2rem;
+    width: 85%;
+    display: flex;
+    align-items: center; /*vertical alignment*/
+    position: relative;
+    
+}
+
+.deleteBtn {
+    position: absolute;
+    right: 0;
+    top: 0;
+    width: 2rem;
+    height: 2rem;
+    font-size: 1.5rem;
+    background-color: rgb(95, 91, 91);
+    color: white;
+    text-align: center; /*center text horizontally*/
+    line-height: 2rem; /*center text vertically (2rem same as the parent li height)*/
+    cursor: pointer;
+    user-select: none;
+}
+
+.deleteBtn:hover {
+    background-color: rgb(41, 40, 40);
+}
+
+.hidden {
+    display: none !important;
+}
+
+/*-----------------------------------------------------------*/

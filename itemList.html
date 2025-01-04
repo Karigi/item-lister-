@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <title>Document</title>
+</head>
+<body>
+    <div class="headingContainer">
+        <h1>Item Lister</h1>
+        <input type="text" id="searchInput" placeholder="Search Items...">
+    </div>
+        <div class="list-container">
+            <h2>Add Items</h2>
+            <form id="form-list">
+                <input type="text" id="form-input">
+                <select id="itemCount"></select>
+                <label for="form-input" id="form-submit">Submit</label>
+            </form>
+            <h2 id="itemsHead">Items</h2>
+            <ul id="items"></ul>
+        </div>
+
+        <script src="itemList.js"></script>
+</body>
+</html>
